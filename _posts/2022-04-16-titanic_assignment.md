@@ -5,7 +5,8 @@
 ## 문제
 타이타닉 데이터 세트를 해결하여라. 목표는 다른 열을 바탕으로 Survived열을 예상하는 것이다.
 
-```import sys
+```
+import sys
 assert sys.version_info >= (3, 7)
 ```
 
