@@ -7,7 +7,9 @@
 
 ```import sys
 assert sys.version_info >= (3, 7)
+```
 
+```
 import sklearn
 assert sklearn.__version__ >= "1.0.1"
 ```
