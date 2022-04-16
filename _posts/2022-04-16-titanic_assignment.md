@@ -11,6 +11,7 @@ assert sys.version_info >= (3, 7)
 import sklearn
 assert sklearn.__version__ >= "1.0.1"
 ```
+
 ```
 from pathlib import Path
 import pandas as pd
@@ -28,9 +29,11 @@ def load_titanic_data():
     return [pd.read_csv(Path("datasets/titanic") / filename)
             for filename in ("train.csv", "test.csv")]
 ```
+
 ```
 train_data, test_data = load_titanic_data()
 ```
+
 데이터가 이미 훈련 세트와 테스트 세트로 나뉘어져있다. 하지만 데이터가 레이블을 포함하지 않으므로, 목표는 훈련 데이터를 가지고 최고의 훈련모델을 훈련시키고, 테스트 데이터를 예상하는 것이다.
 
 ```
