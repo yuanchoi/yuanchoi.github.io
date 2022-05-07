@@ -88,6 +88,7 @@ memory usage: 7.2+ MB
 df.cuisine.value_counts().plot.barh()
 ```
 ![cuisine-dist](https://user-images.githubusercontent.com/79850142/167266675-07fafe9d-58aa-4bff-8d22-f75df3cedb0e.png)
+
 한정된 수의 요리가 있지만, 데이터의 분포가 고르지 않다. 하지만 이를 고칠 수 있다. 그렇게 하기 전에 한번 더 살펴보자.
 
 2. 요리당 얼마나 많은 데이터를 사용할 수 있는지 알아보고 프린트하여라.
