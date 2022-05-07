@@ -127,12 +127,12 @@ cuisine: indian
 ✅ 다른 열의 수를 선택하여 결과를 확인해보아라
 
 3. 더 자세히 살펴보면 다음과 같은 예측의 정확성을 확인할 수 있다.
+
 ```python
 test= X_test.iloc[50].values.reshape(-1, 1).T
 proba = model.predict_proba(test)
 classes = model.classes_
 resultdf = pd.DataFrame(data=proba, columns=classes)
-
 topPrediction = resultdf.T.sort_values(by=[0], ascending = [False])
 topPrediction.head()
 ```
